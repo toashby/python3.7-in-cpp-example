@@ -16,12 +16,14 @@ emb_numargs(PyObject *self, PyObject *args)
     return Py_BuildValue("i", numargs);
 }
 
+// list its name and address in a “method table”:
 static PyMethodDef EmbMethods[] = {
     {"numargs", emb_numargs, METH_VARARGS,
      "Return the number of arguments received by the process."},
     {NULL, NULL, 0, NULL}
 };
 
+// The method table must be referenced in the module definition structure:
 static struct PyModuleDef moduledef = {
     PyModuleDef_HEAD_INIT,  /* m_base */
     "spam",                 /* m_name */
