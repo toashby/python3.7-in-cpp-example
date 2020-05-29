@@ -8,7 +8,7 @@ Requirements:
 
 Compile:  
 To find your compiler/linker flags navigate to your python install dir and run your: python3.xm-config --ldflags  
-if my case this produces:  
+In my case this produces:  
 g++ main.cpp -L/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu -L/usr/lib -lpython3.7m -lcrypt -lpthread -ldl  -lutil -lm
 
 Run:  
