@@ -12,8 +12,8 @@ In my case this produces:
 g++ main.cpp -L/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu -L/usr/lib -lpython3.7m -lcrypt -lpthread -ldl  -lutil -lm
 
 Run:  
-./a.out multiply multiply 2 3
-Number of arguments 5
-Will compute 2 times 3
-Result of call: 6
+./a.out multiply multiply 2 3  
+Number of arguments 5  
+Will compute 2 times 3  
+Result of call: 6  
 
